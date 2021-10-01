@@ -1,14 +1,25 @@
-const isCitizen = true;
-const age = 26;
-
-if (isCitizen && age > 18) {
-  console.log("You are eligible to vote.");
-}
-
-if (temperature < -40 || temperature > 40) {
-  console.log("Maybe going outside isn't such a great idea…");
-}
-
-if (!raining) {
-  console.log("Leave your umbrella at home!");
+var count=60;
+while(count>=0){
+  if(count===50){
+    console.log('Orbiter transfers from ground to internal power');
+  }
+  else if(count===31){
+    console.log('Ground launch sequencer is go for auto sequence startrbiter transfers from ground to internal power');
+  }
+  else if (count===16){
+    console.log('Ground launch Activate launch pad sound suppression system is go for auto sequence startrbiter transfers from ground to internal power');
+  }
+  else if (count===10){
+    console.log('Activate main engine hydrogen burnoff system launch Activate launch pad sound suppression system is go for auto sequence startrbiter transfers from ground to internal power');
+  }
+  else if (count===6){
+    console.log('Main engine start  main engine hydrogen burnoff system launch Activate launch pad sound suppression system is go for auto sequence startrbiter transfers from ground to internal power');
+  }
+  else if(count===0) {
+    console.log('Solid rocket booster ignition and liftoff!');  
+  }
+  else{
+    console.log('T-' + count + ' seconds');
+  }
+  count=count-1;
 }
